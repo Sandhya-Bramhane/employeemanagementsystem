@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the background */
+    body {
+      background-color: #f0f0f0; /* Set a background color */
+      background-image: url('/static/back2.webp'); /* Set a background image */
+      background-size: cover; /* Make sure the image covers the entire background */
+      background-attachment: fixed; /* Keep the background image fixed while scrolling */
+      background-position: center; /* Center the background image */
+      font-family: 'Arial', sans-serif;
+    }
+/* nav */
+   .navbar-custom {
+  background-color: rgb(215, 231, 226);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #15151b;
+  border-radius: 15px;
+}
+
+.navbar-custom .navbar-brand {
+  color: #1d0b0b;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #302808;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #efe8e8;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #0073ff;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar-custom .btn {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.navbar-custom .btn-primary {
+  background-color: #073246;
+  border: none;
+}
+
+.navbar-custom .btn-primary:hover {
+  background-color: #075591;
+}
+
+
+  
+    /* Centered button container */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh; /* Adjust the height according to your needs */
+    }
+
+    .custom-btn {
+      font-weight: bold;
+      font-size: 28px; /* Larger font size for body buttons */
+      padding: 15px 40px; /* Adjust padding for body buttons */
+      margin: 10px;
+      border-radius: 20px;
+      background-color: #d0ede4; /* Different color for the body buttons */
+      border: none;
+      color: #1b21cc;
+      text-transform: uppercase;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow */
+    }
+
+    .custom-btn:hover {
+      background-color: #075591;
+      color: rgb(240, 230, 230);
+    }
+    a{
+       color: black;
+       
+    }
+    
+  </style>
+</head>
+
+<body>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="#"><span style="color: #27062c">Employee</span> Management System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">
+              <button type="button" class="btn btn-info"><a href="/home">Home</a></button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_employee.html">
+              <button type="button" class="btn btn-info"><a href="/empregister">Add Employee</a></button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view_employees.html">
+              <button type="button" class="btn btn-info"><a href="/viewdisplay">View Employees</a></button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- Buttons in the middle of the body with shadows -->
+<div class="button-container">
+  <button class="custom-btn" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)"><a href="/empregister">Add Employee</a></button>
+  <button class="custom-btn" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)"><a href="/viewdisplay">View Employees</a></button>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

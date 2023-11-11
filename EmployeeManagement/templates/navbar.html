@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System - Navbar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Styles for the navbar */
+.navbar-custom {
+  background-color: rgb(215, 231, 226);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #15151b;
+  border-radius: 15px;
+}
+
+.navbar-custom .navbar-brand {
+  color: #1d0b0b;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #302808;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #efe8e8;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #0073ff;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar-custom .btn {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.navbar-custom .btn-primary {
+  background-color: #073246;
+  border: none;
+}
+
+.navbar-custom .btn-primary:hover {
+  background-color: #075591;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#"><span style="color: #27062c">Employee</span> Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="home.html">
+            <button type="button" class="btn btn-primary">Home</button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="add_employee.html">
+            <button type="button" class="btn btn-primary"> <a href="/addemp">Add Employee</a></button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="view_employees.html">
+            <button type="button" class="btn btn-primary">View Employees</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
